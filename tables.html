@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class="first-table">
+        <tr style="background-color: yellow;">
+          <th>#</th>
+          <th>ПІБ</th>
+          <th>Адреса</th>
+          <th>Телефон</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>ПІБ 1</td>
+          <td>Адреса 1</td>
+          <td>1111</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>ПІБ 2</td>
+          <td>Адреса 2</td>
+          <td>2222</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>ПІБ 3</td>
+          <td>Адреса 3</td>
+          <td>3333</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>ПІБ 4</td>
+          <td>Адреса 4</td>
+          <td>4444</td>
+        </tr>
+        <tr>
+          <td colspan="3">Загальна кількість</td>
+          <td>4</td>
+        </tr>
+      </table>
+</body>
+<style>
+  table,
+  th,
+  td {
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: rgba(117, 117, 117, 0.082);
+
+  }
+  th {
+    background-color:yellow;
+  }
+  tr:last-child{
+    background-color: lawngreen;
+  }
+  tr td:first-child{
+    background-color: rgba(84, 74, 172, 0.521);
+  }
+</style>
+
+<table style="text-align: center;">
+	<tbody>
+		<tr>
+			<td rowspan="2">номер</td>
+			<td colspan="4">теги</td>
+		</tr>
+		<tr>
+			<td>тег</td>
+			<td colspan="3">значення</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>p</td>
+			<td colspan="3" rowspan="4">для текста</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>a</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>b</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>i</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>table</td>
+			<td colspan="3">таблиця</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>tr</td>
+			<td colspan="3">ряд таблиці</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>td</td>
+			<td colspan="3" rowspan="2">ячейка таблиці</td>
+		</tr>
+		<tr>
+			<td>8</td>
+      
+			<td>th</td>
+		</tr>
+	</tbody>
+</table>
+
+<table >
+	<tbody>
+		<tr>
+			<td colspan="2" rowspan="2" style="background-image: url(https://www.google.com/search?q=image&sxsrf=AOaemvKNrTD1hQJ_BNGp9S6DeCbv_8qClw:1631638234887&tbm=isch&source=iu&ictx=1&fir=449X1Cy510tOqM%252C5QlcHYOkDlg16M%252C_&vet=1&usg=AI4_-kQq9ggn8TUM9UoqSiME5svZEfDrZA&sa=X&ved=2ahUKEwiklJGL9v7yAhWotIsKHZIQAPkQ9QF6BAgQEAE#imgrc=449X1Cy510tOqM);">1</td>
+			<td colspan="3">2</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="3"3></td>
+		</tr>
+		<tr>
+			<td colspan="2">4</td>
+			<td rowspan="3">5</td>
+			<td>6</td>
+			<td>7</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td rowspan="2">8</td>
+			<td colspan="2" rowspan="2">9</td>
+		</tr>
+		<tr>
+			<td>10</td>
+		</tr>
+		
+	</tbody>
+</table>
+
+
+</html>

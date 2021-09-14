@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+</head>
+<body>
+    <form action="#">
+        <div>
+            Логін:
+            <input type="text">
+        </div>
+        <div>
+            Пароль:
+            <input type="password">
+        </div>
+        <div>
+            Повторіть пароль:
+            <input type="password">
+        </div>
+        <div>Стать: 
+            <input type="radio">
+            <label>чоловік</label>
+            <input type="radio"> 
+            <label>жінка</label>
+        </div>
+        <div>Вкажіть країну: 
+            <select name="select1" id="select1">
+                <option value="value1" selected>Україна</option>
+                <option value="value2" >Білорусь</option>
+                <option value="value3">Молдова</option>
+            </select>
+        </div>
+        <div>Про себе:
+            <textarea name="text_area1" id="text_area1" cols="30" rows="2">Я...</textarea>
+        </div>
+        <br>
+        <button type="submit">Відправити</button>
+    </form>
+</body>
+<style>
+    div{
+        padding: 5px;
+    }
+</style>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+</head>
+<body>
+    <form action="#">
+        <div>
+            Логін:
+            <input type="text">
+        </div>
+        <div>
+            Пароль:
+            <input type="password">
+        </div>
+        <div>
+            Повторіть пароль:
+            <input type="password">
+        </div>
+        <div>Стать: 
+            <input type="radio">
+            <label>чоловік</label>
+            <input type="radio"> 
+            <label>жінка</label>
+        </div>
+        <div>Вкажіть місто: 
+            <select name="select1" id="select1">
+                <option value="value1" selected>Житомир</option>
+                <option value="value2" >Київ</option>
+                <option value="value3">Львів</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" id="scales" name="footbal"> <label>футбол</label>
+            <input type="checkbox" id="scales2" name="chess"><label>шахи</label>
+            <input type="checkbox" id="scales3" name="paint"><label>малювання</label>
+            <input type="checkbox" id="scales4" name="music"><label>музика</label>
+        </div>
+        <button type="reset">Очистити</button>
+        <button type="submit">Відправити</button>
+    </form>
+    <hr>
+
+    <form oninput="result.value= parseInt(kg.value)*2.2046226218">
+        Ваша вага в кг: 
+        <input type="number" id="kg" name="kg" value="60" /> +
+        <span id="result">Ваша вага в фунтах:</span>
+        <output name="result" for="result">132</output>
+    </form>
+    <br>
+    <br>
+
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        Введіть 2 числа і отримайте сумму <br> <br>
+        <input type="number" id="a" name="a" value="12" />
+        +
+        <input type="number" id="b" name="b" value="4" />
+        <span id="result"></span>
+        <output name="result" for="result">16</output>
+    </form>
+    <br>
+    <br>
+
+    <form oninput="result.value=parseInt(b.value)">
+        Скільки ви хочете заробити?
+        <input type="range" id="b" name="b" value="50" />
+        <output name="result" for="a b">50</output>
+    </form>
+    <br>
+
+    <form style="outline: 1px solid rgb(26, 9, 9);" oninput="result.value=parseInt(money.value)/parseInt(hour.value)/10; resultTwo.value=(parseInt(money.value)*parseInt(hour.value))-(parseInt(result.value)*parseInt(hour.value)*10)">
+        <div >Розрахуй ЗП</div>
+        
+        Кількість годин: <br>
+        <input type="text" id="hour" value="10"> <br>
+
+        Ставка $ 
+        <input type="text" id="money" value="20">
+
+        Податок
+
+        <input type="text" id="result" id="first-output"> <br>
+
+        <output name="resultName" for="first-output"> </output><br>
+
+        <label id="resultTwo" for="resultTwo">Зарплата всього:</label>
+        <output name="resultTwo" for="resultTwo"> 
+        
+
+    </div>
+</body>
+<style>
+    div{
+        padding: 0.3rem;
+    }
+</style>
+</html>
